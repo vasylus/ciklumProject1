@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7F71C7A11C19CAD1006D28A3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F71C7A01C19CAD1006D28A3 /* main.m */; };
+		7F71C7A41C19CAD1006D28A3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F71C7A31C19CAD1006D28A3 /* AppDelegate.m */; };
+		7F71C7A71C19CAD1006D28A3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F71C7A61C19CAD1006D28A3 /* ViewController.m */; };
+		7F71C7AA1C19CAD1006D28A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F71C7A81C19CAD1006D28A3 /* Main.storyboard */; };
+		7F71C7AC1C19CAD1006D28A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F71C7AB1C19CAD1006D28A3 /* Assets.xcassets */; };
+		7F71C7AF1C19CAD1006D28A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F71C7AD1C19CAD1006D28A3 /* LaunchScreen.storyboard */; };
+		7F71C7BA1C19CAD1006D28A3 /* ciklumProject1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F71C7B91C19CAD1006D28A3 /* ciklumProject1Tests.m */; };
+		7F71C7C51C19CAD1006D28A3 /* ciklumProject1UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F71C7C41C19CAD1006D28A3 /* ciklumProject1UITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7F71C7B61C19CAD1006D28A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F71C7941C19CAD1006D28A3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7F71C79B1C19CAD1006D28A3;
+			remoteInfo = ciklumProject1;
+		};
+		7F71C7C11C19CAD1006D28A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F71C7941C19CAD1006D28A3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7F71C79B1C19CAD1006D28A3;
+			remoteInfo = ciklumProject1;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7F71C79C1C19CAD1006D28A3 /* ciklumProject1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ciklumProject1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F71C7A01C19CAD1006D28A3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7F71C7A21C19CAD1006D28A3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7F71C7A31C19CAD1006D28A3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7F71C7A51C19CAD1006D28A3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		7F71C7A61C19CAD1006D28A3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		7F71C7A91C19CAD1006D28A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7F71C7AB1C19CAD1006D28A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7F71C7AE1C19CAD1006D28A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7F71C7B01C19CAD1006D28A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F71C7B51C19CAD1006D28A3 /* ciklumProject1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ciklumProject1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F71C7B91C19CAD1006D28A3 /* ciklumProject1Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ciklumProject1Tests.m; sourceTree = "<group>"; };
+		7F71C7BB1C19CAD1006D28A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F71C7C01C19CAD1006D28A3 /* ciklumProject1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ciklumProject1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F71C7C41C19CAD1006D28A3 /* ciklumProject1UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ciklumProject1UITests.m; sourceTree = "<group>"; };
+		7F71C7C61C19CAD1006D28A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7F71C7991C19CAD1006D28A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F71C7B21C19CAD1006D28A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F71C7BD1C19CAD1006D28A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7F71C7931C19CAD1006D28A3 = {
+			isa = PBXGroup;
+			children = (
+				7F71C79E1C19CAD1006D28A3 /* ciklumProject1 */,
+				7F71C7B81C19CAD1006D28A3 /* ciklumProject1Tests */,
+				7F71C7C31C19CAD1006D28A3 /* ciklumProject1UITests */,
+				7F71C79D1C19CAD1006D28A3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7F71C79D1C19CAD1006D28A3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7F71C79C1C19CAD1006D28A3 /* ciklumProject1.app */,
+				7F71C7B51C19CAD1006D28A3 /* ciklumProject1Tests.xctest */,
+				7F71C7C01C19CAD1006D28A3 /* ciklumProject1UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7F71C79E1C19CAD1006D28A3 /* ciklumProject1 */ = {
+			isa = PBXGroup;
+			children = (
+				7F71C7A21C19CAD1006D28A3 /* AppDelegate.h */,
+				7F71C7A31C19CAD1006D28A3 /* AppDelegate.m */,
+				7F71C7A51C19CAD1006D28A3 /* ViewController.h */,
+				7F71C7A61C19CAD1006D28A3 /* ViewController.m */,
+				7F71C7A81C19CAD1006D28A3 /* Main.storyboard */,
+				7F71C7AB1C19CAD1006D28A3 /* Assets.xcassets */,
+				7F71C7AD1C19CAD1006D28A3 /* LaunchScreen.storyboard */,
+				7F71C7B01C19CAD1006D28A3 /* Info.plist */,
+				7F71C79F1C19CAD1006D28A3 /* Supporting Files */,
+			);
+			path = ciklumProject1;
+			sourceTree = "<group>";
+		};
+		7F71C79F1C19CAD1006D28A3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7F71C7A01C19CAD1006D28A3 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7F71C7B81C19CAD1006D28A3 /* ciklumProject1Tests */ = {
+			isa = PBXGroup;
+			children = (
+				7F71C7B91C19CAD1006D28A3 /* ciklumProject1Tests.m */,
+				7F71C7BB1C19CAD1006D28A3 /* Info.plist */,
+			);
+			path = ciklumProject1Tests;
+			sourceTree = "<group>";
+		};
+		7F71C7C31C19CAD1006D28A3 /* ciklumProject1UITests */ = {
+			isa = PBXGroup;
+			children = (
+				7F71C7C41C19CAD1006D28A3 /* ciklumProject1UITests.m */,
+				7F71C7C61C19CAD1006D28A3 /* Info.plist */,
+			);
+			path = ciklumProject1UITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7F71C79B1C19CAD1006D28A3 /* ciklumProject1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F71C7C91C19CAD1006D28A3 /* Build configuration list for PBXNativeTarget "ciklumProject1" */;
+			buildPhases = (
+				7F71C7981C19CAD1006D28A3 /* Sources */,
+				7F71C7991C19CAD1006D28A3 /* Frameworks */,
+				7F71C79A1C19CAD1006D28A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ciklumProject1;
+			productName = ciklumProject1;
+			productReference = 7F71C79C1C19CAD1006D28A3 /* ciklumProject1.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7F71C7B41C19CAD1006D28A3 /* ciklumProject1Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F71C7CC1C19CAD1006D28A3 /* Build configuration list for PBXNativeTarget "ciklumProject1Tests" */;
+			buildPhases = (
+				7F71C7B11C19CAD1006D28A3 /* Sources */,
+				7F71C7B21C19CAD1006D28A3 /* Frameworks */,
+				7F71C7B31C19CAD1006D28A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7F71C7B71C19CAD1006D28A3 /* PBXTargetDependency */,
+			);
+			name = ciklumProject1Tests;
+			productName = ciklumProject1Tests;
+			productReference = 7F71C7B51C19CAD1006D28A3 /* ciklumProject1Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7F71C7BF1C19CAD1006D28A3 /* ciklumProject1UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F71C7CF1C19CAD1006D28A3 /* Build configuration list for PBXNativeTarget "ciklumProject1UITests" */;
+			buildPhases = (
+				7F71C7BC1C19CAD1006D28A3 /* Sources */,
+				7F71C7BD1C19CAD1006D28A3 /* Frameworks */,
+				7F71C7BE1C19CAD1006D28A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7F71C7C21C19CAD1006D28A3 /* PBXTargetDependency */,
+			);
+			name = ciklumProject1UITests;
+			productName = ciklumProject1UITests;
+			productReference = 7F71C7C01C19CAD1006D28A3 /* ciklumProject1UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7F71C7941C19CAD1006D28A3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Vasyl Vasylchenko";
+				TargetAttributes = {
+					7F71C79B1C19CAD1006D28A3 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					7F71C7B41C19CAD1006D28A3 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = 7F71C79B1C19CAD1006D28A3;
+					};
+					7F71C7BF1C19CAD1006D28A3 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = 7F71C79B1C19CAD1006D28A3;
+					};
+				};
+			};
+			buildConfigurationList = 7F71C7971C19CAD1006D28A3 /* Build configuration list for PBXProject "ciklumProject1" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7F71C7931C19CAD1006D28A3;
+			productRefGroup = 7F71C79D1C19CAD1006D28A3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7F71C79B1C19CAD1006D28A3 /* ciklumProject1 */,
+				7F71C7B41C19CAD1006D28A3 /* ciklumProject1Tests */,
+				7F71C7BF1C19CAD1006D28A3 /* ciklumProject1UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7F71C79A1C19CAD1006D28A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F71C7AF1C19CAD1006D28A3 /* LaunchScreen.storyboard in Resources */,
+				7F71C7AC1C19CAD1006D28A3 /* Assets.xcassets in Resources */,
+				7F71C7AA1C19CAD1006D28A3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F71C7B31C19CAD1006D28A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F71C7BE1C19CAD1006D28A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7F71C7981C19CAD1006D28A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F71C7A71C19CAD1006D28A3 /* ViewController.m in Sources */,
+				7F71C7A41C19CAD1006D28A3 /* AppDelegate.m in Sources */,
+				7F71C7A11C19CAD1006D28A3 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F71C7B11C19CAD1006D28A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F71C7BA1C19CAD1006D28A3 /* ciklumProject1Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F71C7BC1C19CAD1006D28A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F71C7C51C19CAD1006D28A3 /* ciklumProject1UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7F71C7B71C19CAD1006D28A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7F71C79B1C19CAD1006D28A3 /* ciklumProject1 */;
+			targetProxy = 7F71C7B61C19CAD1006D28A3 /* PBXContainerItemProxy */;
+		};
+		7F71C7C21C19CAD1006D28A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7F71C79B1C19CAD1006D28A3 /* ciklumProject1 */;
+			targetProxy = 7F71C7C11C19CAD1006D28A3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7F71C7A81C19CAD1006D28A3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7F71C7A91C19CAD1006D28A3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7F71C7AD1C19CAD1006D28A3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7F71C7AE1C19CAD1006D28A3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7F71C7C71C19CAD1006D28A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7F71C7C81C19CAD1006D28A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7F71C7CA1C19CAD1006D28A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ciklumProject1/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = vasylvasylchenko.ciklumProject1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7F71C7CB1C19CAD1006D28A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ciklumProject1/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = vasylvasylchenko.ciklumProject1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		7F71C7CD1C19CAD1006D28A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ciklumProject1Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = vasylvasylchenko.ciklumProject1Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ciklumProject1.app/ciklumProject1";
+			};
+			name = Debug;
+		};
+		7F71C7CE1C19CAD1006D28A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ciklumProject1Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = vasylvasylchenko.ciklumProject1Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ciklumProject1.app/ciklumProject1";
+			};
+			name = Release;
+		};
+		7F71C7D01C19CAD1006D28A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ciklumProject1UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = vasylvasylchenko.ciklumProject1UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ciklumProject1;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		7F71C7D11C19CAD1006D28A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ciklumProject1UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = vasylvasylchenko.ciklumProject1UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ciklumProject1;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7F71C7971C19CAD1006D28A3 /* Build configuration list for PBXProject "ciklumProject1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F71C7C71C19CAD1006D28A3 /* Debug */,
+				7F71C7C81C19CAD1006D28A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F71C7C91C19CAD1006D28A3 /* Build configuration list for PBXNativeTarget "ciklumProject1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F71C7CA1C19CAD1006D28A3 /* Debug */,
+				7F71C7CB1C19CAD1006D28A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7F71C7CC1C19CAD1006D28A3 /* Build configuration list for PBXNativeTarget "ciklumProject1Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F71C7CD1C19CAD1006D28A3 /* Debug */,
+				7F71C7CE1C19CAD1006D28A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7F71C7CF1C19CAD1006D28A3 /* Build configuration list for PBXNativeTarget "ciklumProject1UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F71C7D01C19CAD1006D28A3 /* Debug */,
+				7F71C7D11C19CAD1006D28A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7F71C7941C19CAD1006D28A3 /* Project object */;
+}
