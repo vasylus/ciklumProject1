@@ -8,7 +8,13 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+
+@interface ViewController (){
+
+    MyClass * myClass;
+ }
+@property (weak, nonatomic) IBOutlet UITextField *textFieldOutlet;
+@property (weak, nonatomic) IBOutlet UITextView *textViewOutlet;
 
 @end
 
@@ -16,12 +22,42 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    myClass = [MyClass new];
+    myClass.arrayOfObject= [NSMutableArray new];
+    
+ }
+
+- (IBAction)addButton:(id)sender {
+    [myClass addObject: self.textFieldOutlet.text];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
+- (IBAction)deleteButton:(id)sender {
+    [myClass removeOBject];
+ }
+
+- (IBAction)showArray:(id)sender {
+         self.textViewOutlet.text = [NSString stringWithFormat:@"%@", myClass.arrayOfObject];
+ }
+
+@end
+
+
+
+@implementation MyClass
+
+
+- (void)addObject:(NSString *)string{
+    
+    [self.arrayOfObject addObject:string];
+    
 }
+- (void)removeOBject{
+    
+    [self.arrayOfObject removeLastObject];
+}
+
+
 
 @end
