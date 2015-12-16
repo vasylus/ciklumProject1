@@ -15,6 +15,9 @@
 		7F71C7AF1C19CAD1006D28A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F71C7AD1C19CAD1006D28A3 /* LaunchScreen.storyboard */; };
 		7F71C7BA1C19CAD1006D28A3 /* ciklumProject1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F71C7B91C19CAD1006D28A3 /* ciklumProject1Tests.m */; };
 		7F71C7C51C19CAD1006D28A3 /* ciklumProject1UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F71C7C41C19CAD1006D28A3 /* ciklumProject1UITests.m */; };
+		7FF0F3661C2014DE007C16FB /* CustomTVDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FF0F3651C2014DE007C16FB /* CustomTVDataSource.m */; };
+		7FF0F36A1C201681007C16FB /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FF0F3681C201681007C16FB /* CustomTableViewCell.m */; };
+		7FF0F36B1C201681007C16FB /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FF0F3691C201681007C16FB /* CustomTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,11 @@
 		7F71C7C01C19CAD1006D28A3 /* ciklumProject1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ciklumProject1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F71C7C41C19CAD1006D28A3 /* ciklumProject1UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ciklumProject1UITests.m; sourceTree = "<group>"; };
 		7F71C7C61C19CAD1006D28A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7FF0F3641C2014DE007C16FB /* CustomTVDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTVDataSource.h; sourceTree = "<group>"; };
+		7FF0F3651C2014DE007C16FB /* CustomTVDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTVDataSource.m; sourceTree = "<group>"; };
+		7FF0F3671C201681007C16FB /* CustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCell.h; sourceTree = "<group>"; };
+		7FF0F3681C201681007C16FB /* CustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCell.m; sourceTree = "<group>"; };
+		7FF0F3691C201681007C16FB /* CustomTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +113,11 @@
 				7F71C7A31C19CAD1006D28A3 /* AppDelegate.m */,
 				7F71C7A51C19CAD1006D28A3 /* ViewController.h */,
 				7F71C7A61C19CAD1006D28A3 /* ViewController.m */,
+				7FF0F3641C2014DE007C16FB /* CustomTVDataSource.h */,
+				7FF0F3651C2014DE007C16FB /* CustomTVDataSource.m */,
+				7FF0F3671C201681007C16FB /* CustomTableViewCell.h */,
+				7FF0F3681C201681007C16FB /* CustomTableViewCell.m */,
+				7FF0F3691C201681007C16FB /* CustomTableViewCell.xib */,
 				7F71C7A81C19CAD1006D28A3 /* Main.storyboard */,
 				7F71C7AB1C19CAD1006D28A3 /* Assets.xcassets */,
 				7F71C7AD1C19CAD1006D28A3 /* LaunchScreen.storyboard */,
@@ -245,6 +258,7 @@
 			files = (
 				7F71C7AF1C19CAD1006D28A3 /* LaunchScreen.storyboard in Resources */,
 				7F71C7AC1C19CAD1006D28A3 /* Assets.xcassets in Resources */,
+				7FF0F36B1C201681007C16FB /* CustomTableViewCell.xib in Resources */,
 				7F71C7AA1C19CAD1006D28A3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,6 +287,8 @@
 				7F71C7A71C19CAD1006D28A3 /* ViewController.m in Sources */,
 				7F71C7A41C19CAD1006D28A3 /* AppDelegate.m in Sources */,
 				7F71C7A11C19CAD1006D28A3 /* main.m in Sources */,
+				7FF0F36A1C201681007C16FB /* CustomTableViewCell.m in Sources */,
+				7FF0F3661C2014DE007C16FB /* CustomTVDataSource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,6 +514,7 @@
 				7F71C7CB1C19CAD1006D28A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7F71C7CC1C19CAD1006D28A3 /* Build configuration list for PBXNativeTarget "ciklumProject1Tests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +523,7 @@
 				7F71C7CE1C19CAD1006D28A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7F71C7CF1C19CAD1006D28A3 /* Build configuration list for PBXNativeTarget "ciklumProject1UITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +532,7 @@
 				7F71C7D11C19CAD1006D28A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

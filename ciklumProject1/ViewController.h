@@ -8,23 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@protocol Store <NSObject>
 
-- (void)addObject : (NSString*)string;
-- (void)removeOBject;
-
-@end
 
 @interface ViewController : UIViewController
 
-
-
-@end
-
-
-@interface MyClass : NSObject <Store>
-
-@property NSMutableArray * arrayOfObject;
+@property (weak, nonatomic) IBOutlet UITextField *textFieldOutlet;
+@property (strong, nonatomic) IBOutlet UITableView *theTable;
 
 @end
+
+
 

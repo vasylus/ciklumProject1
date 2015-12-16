@@ -7,14 +7,12 @@
 //
 
 #import "ViewController.h"
+#import "CustomTVDataSource.h"
 
 
-@interface ViewController (){
+@interface ViewController ()
 
-    MyClass * myClass;
- }
-@property (weak, nonatomic) IBOutlet UITextField *textFieldOutlet;
-@property (weak, nonatomic) IBOutlet UITextView *textViewOutlet;
+@property (nonatomic, strong) CustomTVDataSource *dataSource;
 
 @end
 
@@ -23,41 +21,29 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    myClass = [MyClass new];
-    myClass.arrayOfObject= [NSMutableArray new];
+    [self loadMyTableView];
     
+ }
+
+-(void)loadMyTableView{
+        self.dataSource = [[CustomTVDataSource alloc] initWithTableView:self.theTable];
  }
 
 - (IBAction)addButton:(id)sender {
-    [myClass addObject: self.textFieldOutlet.text];
+    [self.dataSource addObject:self.textFieldOutlet.text inTbaleView:self.theTable];
 }
-
 
 - (IBAction)deleteButton:(id)sender {
-    [myClass removeOBject];
+    [self.dataSource removeOBject:self.theTable];
  }
 
-- (IBAction)showArray:(id)sender {
-         self.textViewOutlet.text = [NSString stringWithFormat:@"%@", myClass.arrayOfObject];
- }
 
 @end
 
 
 
-@implementation MyClass
-
-
-- (void)addObject:(NSString *)string{
-    
-    [self.arrayOfObject addObject:string];
-    
-}
-- (void)removeOBject{
-    
-    [self.arrayOfObject removeLastObject];
-}
 
 
 
-@end
+
+
