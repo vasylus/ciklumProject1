@@ -11,7 +11,7 @@
 
 @protocol StoreOfTableView <NSObject>
 
-- (void)addObject:(NSString *)string inTbaleView:(UITableView *)tableView;
+- (void)addObject:(UITableView *)tableView;
 - (void)removeOBject:(UITableView *)tableView;
  
 @end

@@ -12,7 +12,6 @@
 
 @interface ViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UITextField *textFieldOutlet;
 @property (strong, nonatomic) IBOutlet UITableView *theTable;
 
 @end

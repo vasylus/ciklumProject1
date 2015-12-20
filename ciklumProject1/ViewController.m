@@ -9,7 +9,6 @@
 #import "ViewController.h"
 #import "CustomTVDataSource.h"
 
-
 @interface ViewController ()
 
 @property (nonatomic, strong) CustomTVDataSource *dataSource;
@@ -20,20 +19,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     [self loadMyTableView];
-    
  }
 
--(void)loadMyTableView{
+- (void)loadMyTableView{
         self.dataSource = [[CustomTVDataSource alloc] initWithTableView:self.theTable];
  }
 
-- (IBAction)addButton:(id)sender {
-    [self.dataSource addObject:self.textFieldOutlet.text inTbaleView:self.theTable];
-}
+- (IBAction)addButton:(id)sender{
+    [self.dataSource addObject:self.theTable];
+ }
 
-- (IBAction)deleteButton:(id)sender {
+- (IBAction)deleteButton:(id)sender{
     [self.dataSource removeOBject:self.theTable];
  }
 

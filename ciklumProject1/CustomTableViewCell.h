@@ -10,7 +10,7 @@
 
 @protocol DataForCell <NSObject>
 
-- (void)fillWithObject:(id)object;
+- (void)fillWithObject:(id)object atIndex:(NSIndexPath *)indexPath;
 
 @end
 

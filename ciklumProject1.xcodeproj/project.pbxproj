@@ -15,6 +15,8 @@
 		7F71C7AF1C19CAD1006D28A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F71C7AD1C19CAD1006D28A3 /* LaunchScreen.storyboard */; };
 		7F71C7BA1C19CAD1006D28A3 /* ciklumProject1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F71C7B91C19CAD1006D28A3 /* ciklumProject1Tests.m */; };
 		7F71C7C51C19CAD1006D28A3 /* ciklumProject1UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F71C7C41C19CAD1006D28A3 /* ciklumProject1UITests.m */; };
+		7F93B8001C23F3B500919BD4 /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F93B7FF1C23F3B500919BD4 /* UserModel.m */; };
+		7FE61DF81C25729B00E59243 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE61DF71C25729B00E59243 /* NSString+MD5.m */; };
 		7FF0F3661C2014DE007C16FB /* CustomTVDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FF0F3651C2014DE007C16FB /* CustomTVDataSource.m */; };
 		7FF0F36A1C201681007C16FB /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FF0F3681C201681007C16FB /* CustomTableViewCell.m */; };
 		7FF0F36B1C201681007C16FB /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FF0F3691C201681007C16FB /* CustomTableViewCell.xib */; };
@@ -54,6 +56,10 @@
 		7F71C7C01C19CAD1006D28A3 /* ciklumProject1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ciklumProject1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F71C7C41C19CAD1006D28A3 /* ciklumProject1UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ciklumProject1UITests.m; sourceTree = "<group>"; };
 		7F71C7C61C19CAD1006D28A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F93B7FE1C23F3B500919BD4 /* UserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserModel.h; sourceTree = "<group>"; };
+		7F93B7FF1C23F3B500919BD4 /* UserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
+		7FE61DF61C25729B00E59243 /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
+		7FE61DF71C25729B00E59243 /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
 		7FF0F3641C2014DE007C16FB /* CustomTVDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTVDataSource.h; sourceTree = "<group>"; };
 		7FF0F3651C2014DE007C16FB /* CustomTVDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTVDataSource.m; sourceTree = "<group>"; };
 		7FF0F3671C201681007C16FB /* CustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCell.h; sourceTree = "<group>"; };
@@ -115,8 +121,12 @@
 				7F71C7A61C19CAD1006D28A3 /* ViewController.m */,
 				7FF0F3641C2014DE007C16FB /* CustomTVDataSource.h */,
 				7FF0F3651C2014DE007C16FB /* CustomTVDataSource.m */,
+				7F93B7FE1C23F3B500919BD4 /* UserModel.h */,
+				7F93B7FF1C23F3B500919BD4 /* UserModel.m */,
 				7FF0F3671C201681007C16FB /* CustomTableViewCell.h */,
 				7FF0F3681C201681007C16FB /* CustomTableViewCell.m */,
+				7FE61DF61C25729B00E59243 /* NSString+MD5.h */,
+				7FE61DF71C25729B00E59243 /* NSString+MD5.m */,
 				7FF0F3691C201681007C16FB /* CustomTableViewCell.xib */,
 				7F71C7A81C19CAD1006D28A3 /* Main.storyboard */,
 				7F71C7AB1C19CAD1006D28A3 /* Assets.xcassets */,
@@ -220,6 +230,7 @@
 				TargetAttributes = {
 					7F71C79B1C19CAD1006D28A3 = {
 						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = KHCF8EGZ5Y;
 					};
 					7F71C7B41C19CAD1006D28A3 = {
 						CreatedOnToolsVersion = 7.1.1;
@@ -286,9 +297,11 @@
 			files = (
 				7F71C7A71C19CAD1006D28A3 /* ViewController.m in Sources */,
 				7F71C7A41C19CAD1006D28A3 /* AppDelegate.m in Sources */,
+				7F93B8001C23F3B500919BD4 /* UserModel.m in Sources */,
 				7F71C7A11C19CAD1006D28A3 /* main.m in Sources */,
 				7FF0F36A1C201681007C16FB /* CustomTableViewCell.m in Sources */,
 				7FF0F3661C2014DE007C16FB /* CustomTVDataSource.m in Sources */,
+				7FE61DF81C25729B00E59243 /* NSString+MD5.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,10 +442,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ciklumProject1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = vasylvasylchenko.ciklumProject1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -440,10 +456,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ciklumProject1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = vasylvasylchenko.ciklumProject1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
