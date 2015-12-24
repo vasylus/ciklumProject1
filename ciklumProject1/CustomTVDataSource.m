@@ -10,13 +10,12 @@
 #import "UserModel.h"
 #import "CollectionViewCell.h"
 #import "IndexHelper.h"
-
-static NSString * serverPath = @"https://randomuser.me/api/";
+#import "NetworkProvide.h"
 
 @interface CustomTVDataSource()<UICollectionViewDelegate, UICollectionViewDataSource>
 
-@property NSMutableArray * arrayOfIndexPathes;
-@property NSIndexPath * selctedIndexPath;
+@property NSMutableArray *arrayOfIndexPathes;
+@property NSIndexPath *selctedIndexPath;
 
 @end
 
@@ -29,7 +28,6 @@ static NSString * serverPath = @"https://randomuser.me/api/";
          self.arrayOfObject = @[].mutableCopy;
           [self configureMyCollectionView:collectionView];
     }
-    
     return self;
 }
 
@@ -40,22 +38,6 @@ static NSString * serverPath = @"https://randomuser.me/api/";
     [collectionView setBackgroundColor:[UIColor whiteColor]];
     
     [collectionView registerNib:[UINib nibWithNibName:@"CollectionViewCell" bundle:nil] forCellWithReuseIdentifier:@"CollectionViewCell"];
-}
-
-- (void)getRepors:(void(^)(id objects))successBlock{
-    NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
-    NSURLSession *session = [NSURLSession sessionWithConfiguration:configuration];
-    NSURL *url = [NSURL URLWithString:serverPath];
-    
-    NSURLSessionDataTask *task = [session dataTaskWithURL:url completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-        id object = [NSJSONSerialization JSONObjectWithData:data
-                                                    options:0
-                                                      error:nil];
-        if (successBlock){
-            successBlock(object);
-        }
-    }];
-    [task resume];
 }
 
 - (void)removeOBjectFromCollectionView:(UICollectionView *)collectionView{
@@ -75,7 +57,7 @@ static NSString * serverPath = @"https://randomuser.me/api/";
 }
 
 - (void)addObjectToCollectionView:(UICollectionView *)collectionView{
-    [self getRepors:^(id objects) {
+    [NetworkProvide getRepors:^(id objects) {
         for (NSDictionary *dictionary in [objects valueForKey:@"results"]) {
             UserModel *user = [[UserModel alloc] initWithDictionary:dictionary];
             [self.arrayOfObject addObject:user];
@@ -89,7 +71,7 @@ static NSString * serverPath = @"https://randomuser.me/api/";
 #pragma mark - collectionView
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
-    CollectionViewCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"CollectionViewCell" forIndexPath:indexPath];
+    CollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"CollectionViewCell" forIndexPath:indexPath];
      [cell fillWithObject:self.arrayOfObject[indexPath.row] atIndex:indexPath];
      return cell;
 }
@@ -105,7 +87,7 @@ static NSString * serverPath = @"https://randomuser.me/api/";
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     [self.arrayOfIndexPathes addObject:indexPath];
     self.selctedIndexPath = indexPath;
-    UICollectionViewCell * cell = [collectionView cellForItemAtIndexPath:indexPath];
+    UICollectionViewCell *cell = [collectionView cellForItemAtIndexPath:indexPath];
     [cell setBackgroundColor:[UIColor lightGrayColor]];
 }
 

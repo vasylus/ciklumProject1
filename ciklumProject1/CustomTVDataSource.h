@@ -16,10 +16,9 @@
 
 @end
 
-
 @interface CustomTVDataSource : NSObject <StoreOfTableView>
 
-@property NSMutableArray * arrayOfObject;
+@property NSMutableArray *arrayOfObject;
 - (instancetype)initWithCollectionView:(UICollectionView *)collectionView;
 
 

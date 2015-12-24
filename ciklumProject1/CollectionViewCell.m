@@ -17,7 +17,7 @@
 @implementation CollectionViewCell
 
 - (void)fillWithObject:(id)object atIndex:(NSIndexPath *)indexPath{
-    NSString * url = [NSString stringWithFormat:@"%@", [object valueForKey:@"userPicturePath"]];
+    NSString *url = [NSString stringWithFormat:@"%@", [object valueForKey:@"userPicturePath"]];
     
     dispatch_async(dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^(void){
         NSString *md5 = [NSString MD5StringWithString:url];

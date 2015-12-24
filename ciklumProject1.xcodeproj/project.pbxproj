@@ -20,6 +20,7 @@
 		7FE61E051C2867C400E59243 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE61E031C2867C400E59243 /* CollectionViewCell.m */; };
 		7FE61E061C2867C400E59243 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FE61E041C2867C400E59243 /* CollectionViewCell.xib */; };
 		7FEB7B641C2AEF8B0094B6E4 /* IndexHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FEB7B631C2AEF8B0094B6E4 /* IndexHelper.m */; };
+		7FEB7B6D1C2C74FD0094B6E4 /* NetworkProvide.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FEB7B6C1C2C74FD0094B6E4 /* NetworkProvide.m */; };
 		7FF0F3661C2014DE007C16FB /* CustomTVDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FF0F3651C2014DE007C16FB /* CustomTVDataSource.m */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +67,8 @@
 		7FE61E041C2867C400E59243 /* CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
 		7FEB7B621C2AEF8B0094B6E4 /* IndexHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IndexHelper.h; sourceTree = "<group>"; };
 		7FEB7B631C2AEF8B0094B6E4 /* IndexHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IndexHelper.m; sourceTree = "<group>"; };
+		7FEB7B6B1C2C74FD0094B6E4 /* NetworkProvide.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkProvide.h; sourceTree = "<group>"; };
+		7FEB7B6C1C2C74FD0094B6E4 /* NetworkProvide.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkProvide.m; sourceTree = "<group>"; };
 		7FF0F3641C2014DE007C16FB /* CustomTVDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTVDataSource.h; sourceTree = "<group>"; };
 		7FF0F3651C2014DE007C16FB /* CustomTVDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTVDataSource.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -164,6 +167,8 @@
 				7F71C7A31C19CAD1006D28A3 /* AppDelegate.m */,
 				7FF0F3641C2014DE007C16FB /* CustomTVDataSource.h */,
 				7FF0F3651C2014DE007C16FB /* CustomTVDataSource.m */,
+				7FEB7B6B1C2C74FD0094B6E4 /* NetworkProvide.h */,
+				7FEB7B6C1C2C74FD0094B6E4 /* NetworkProvide.m */,
 				7F93B7FE1C23F3B500919BD4 /* UserModel.h */,
 				7F93B7FF1C23F3B500919BD4 /* UserModel.m */,
 				7FEB7B621C2AEF8B0094B6E4 /* IndexHelper.h */,
@@ -324,6 +329,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FEB7B6D1C2C74FD0094B6E4 /* NetworkProvide.m in Sources */,
 				7FEB7B641C2AEF8B0094B6E4 /* IndexHelper.m in Sources */,
 				7F71C7A71C19CAD1006D28A3 /* ViewController.m in Sources */,
 				7F71C7A41C19CAD1006D28A3 /* AppDelegate.m in Sources */,

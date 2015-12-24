@@ -12,12 +12,9 @@
 
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary{
      if (self = [super init]){
-
-        self.userName = [[[dictionary valueForKey:@"user"] valueForKey:@"name"] valueForKey:@"first"];
-        self.userLastName = [[[dictionary valueForKey:@"user"] valueForKey:@"name"] valueForKey:@"last"];
-        self.userPicturePath = [[[dictionary valueForKey:@"user"] valueForKey:@"picture"] valueForKey:@"thumbnail"];
+         NSDictionary *dic = dictionary[@"user"];
+         self.userPicturePath = dic[@"picture"][@"thumbnail"];
       }
-    
     return self;
 }
 
