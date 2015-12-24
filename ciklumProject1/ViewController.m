@@ -19,19 +19,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self loadMyTableView];
+    [self loadMyCollectionView];
  }
 
-- (void)loadMyTableView{
-        self.dataSource = [[CustomTVDataSource alloc] initWithTableView:self.theTable];
+- (void)loadMyCollectionView{
+    self.dataSource = [[CustomTVDataSource alloc] initWithCollectionView:self.collectionView];
  }
 
 - (IBAction)addButton:(id)sender{
-    [self.dataSource addObject:self.theTable];
+    [self.dataSource addObjectToCollectionView:self.collectionView];
  }
 
 - (IBAction)deleteButton:(id)sender{
-    [self.dataSource removeOBject:self.theTable];
+    [self.dataSource removeOBjectFromCollectionView:self.collectionView];
  }
 
 

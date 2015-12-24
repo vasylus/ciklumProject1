@@ -7,63 +7,39 @@
 //
 
 #import "CustomTVDataSource.h"
-#import "CustomTableViewCell.h"
 #import "UserModel.h"
+#import "CollectionViewCell.h"
+#import "IndexHelper.h"
 
 static NSString * serverPath = @"https://randomuser.me/api/";
 
-@interface CustomTVDataSource()<UITableViewDataSource, UITableViewDelegate>
+@interface CustomTVDataSource()<UICollectionViewDelegate, UICollectionViewDataSource>
+
+@property NSMutableArray * arrayOfIndexPathes;
+@property NSIndexPath * selctedIndexPath;
 
 @end
 
 @implementation CustomTVDataSource
 
-- (instancetype)initWithTableView:(UITableView *)tableView{
+- (instancetype)initWithCollectionView:(UICollectionView *)collectionView{
     
     if (self = [super init]) {
-        self.arrayOfObject = @[].mutableCopy;
-        [self configure:tableView];
+        self.arrayOfIndexPathes = @[].mutableCopy;
+         self.arrayOfObject = @[].mutableCopy;
+          [self configureMyCollectionView:collectionView];
     }
     
     return self;
 }
 
-- (void)configure:(UITableView *)tableView{
-    tableView.dataSource  = self;
-    tableView.delegate = self;
+- (void)configureMyCollectionView:(UICollectionView*)collectionView{
+    collectionView.delegate = self;
+    collectionView.dataSource = self;
     
-    [tableView reloadData];
+    [collectionView setBackgroundColor:[UIColor whiteColor]];
     
-    [tableView registerNib:[UINib nibWithNibName:@"CustomTableViewCell" bundle:nil]
-    forCellReuseIdentifier:NSStringFromClass([CustomTableViewCell class])];
- }
-
-- (void)addObject:(UITableView *)tableView{
-     [self getRepors:^(id objects) {
-        for (NSDictionary *dictionary in [objects valueForKey:@"results"]) {
-             UserModel *user = [[UserModel alloc] initWithDictionary:dictionary];
-             [self.arrayOfObject addObject:user];
-           }
-          dispatch_async(dispatch_get_main_queue(), ^(void){
-             
-             [tableView beginUpdates];
-             [tableView insertRowsAtIndexPaths:@[[self myIndexPath:tableView]] withRowAnimation:UITableViewRowAnimationRight];
-             [tableView endUpdates];
-         });
-
-    }];
-
-}
-
--(NSIndexPath *)myIndexPath:(UITableView *)tableView{
-    NSInteger sections = 0;
-    NSInteger rows = [tableView numberOfRowsInSection:sections];
-    
-    if (rows == NSNotFound) {
-        rows = 0;
-    }
-    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:rows inSection:sections];
-    return indexPath;
+    [collectionView registerNib:[UINib nibWithNibName:@"CollectionViewCell" bundle:nil] forCellWithReuseIdentifier:@"CollectionViewCell"];
 }
 
 - (void)getRepors:(void(^)(id objects))successBlock{
@@ -79,37 +55,58 @@ static NSString * serverPath = @"https://randomuser.me/api/";
             successBlock(object);
         }
     }];
-    
     [task resume];
 }
 
-- (void)removeOBject:(UITableView *)tableView{
-    if (self.arrayOfObject.count) {
-        NSIndexPath *indexPath = [NSIndexPath indexPathForRow:self.arrayOfObject.count - 1 inSection:0];
-        
-        [self.arrayOfObject removeLastObject];
-        
-        [tableView beginUpdates];
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationLeft];
-        [tableView endUpdates];
-    }
+- (void)removeOBjectFromCollectionView:(UICollectionView *)collectionView{
+    if (self.arrayOfObject.count){
+        NSIndexPath *indexPath = [NSIndexPath indexPathForItem:self.arrayOfObject.count -1 inSection:0];
+            if (self.selctedIndexPath){
+                
+                [self.arrayOfObject removeObjectAtIndex:self.selctedIndexPath.row];
+                [collectionView deleteItemsAtIndexPaths:@[self.arrayOfIndexPathes.lastObject]];
+                self.selctedIndexPath = nil;
+                  }else{
+                      
+                  [self.arrayOfObject removeLastObject];
+                  [collectionView deleteItemsAtIndexPaths:@[indexPath]];
+            }
+     }
 }
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    return 1;
-}
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return self.arrayOfObject.count;
+- (void)addObjectToCollectionView:(UICollectionView *)collectionView{
+    [self getRepors:^(id objects) {
+        for (NSDictionary *dictionary in [objects valueForKey:@"results"]) {
+            UserModel *user = [[UserModel alloc] initWithDictionary:dictionary];
+            [self.arrayOfObject addObject:user];
+        }
+        dispatch_async(dispatch_get_main_queue(), ^(void){
+                [collectionView insertItemsAtIndexPaths:@[[IndexHelper myIndexPath:collectionView]]];
+        });
+     }];
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    
-     CustomTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([CustomTableViewCell class])];
+#pragma mark - collectionView
+
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
+    CollectionViewCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"CollectionViewCell" forIndexPath:indexPath];
      [cell fillWithObject:self.arrayOfObject[indexPath.row] atIndex:indexPath];
      return cell;
 }
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-     return 100;
+
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
+     return self.arrayOfObject.count;
+}
+
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
+    return CGSizeMake(80, 80);
+}
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    [self.arrayOfIndexPathes addObject:indexPath];
+    self.selctedIndexPath = indexPath;
+    UICollectionViewCell * cell = [collectionView cellForItemAtIndexPath:indexPath];
+    [cell setBackgroundColor:[UIColor lightGrayColor]];
 }
 
 @end

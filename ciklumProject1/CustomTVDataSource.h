@@ -11,16 +11,17 @@
 
 @protocol StoreOfTableView <NSObject>
 
-- (void)addObject:(UITableView *)tableView;
-- (void)removeOBject:(UITableView *)tableView;
- 
+- (void)addObjectToCollectionView:(UICollectionView *)collectionView;
+- (void)removeOBjectFromCollectionView:(UICollectionView *)collectionView;
+
 @end
 
 
 @interface CustomTVDataSource : NSObject <StoreOfTableView>
 
- - (instancetype)initWithTableView:(UITableView *)tableView;
 @property NSMutableArray * arrayOfObject;
+- (instancetype)initWithCollectionView:(UICollectionView *)collectionView;
+
 
 @end
 
