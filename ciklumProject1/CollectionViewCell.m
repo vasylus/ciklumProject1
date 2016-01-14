@@ -10,6 +10,7 @@
 #import "NSString+MD5.h"
 
 @interface CollectionViewCell ()
+
 @property (weak, nonatomic) IBOutlet UIImageView *imageOutlet;
 
 @end
@@ -17,7 +18,7 @@
 @implementation CollectionViewCell
 
 - (void)fillWithObject:(id)object atIndex:(NSIndexPath *)indexPath{
-    NSString *url = [NSString stringWithFormat:@"%@", [object valueForKey:@"userPicturePath"]];
+    NSString *url = [NSString stringWithFormat:@"%@", [object valueForKey:@"imageData"]];
     
     dispatch_async(dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^(void){
         NSString *md5 = [NSString MD5StringWithString:url];
@@ -27,7 +28,7 @@
         
         NSData *data = [NSData dataWithContentsOfFile:path];
         
-        if (!data) {
+        if (!data){
             data = [NSData dataWithContentsOfURL:[NSURL URLWithString:url]];
             [data writeToFile:path atomically:YES];
         }
@@ -37,8 +38,6 @@
             self.imageOutlet.image = img;
         });
     });
-
-    
 }
 
 @end

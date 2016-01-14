@@ -1,0 +1,19 @@
+//
+//  Helper.pch
+//  ciklumProject1
+//
+//  Created by Vasyl Vasylchenko on 11.01.16.
+//  Copyright © 2016 Vasyl Vasylchenko. All rights reserved.
+//
+
+
+#import <MagicalRecord/MagicalRecord.h>
+
+
+#ifndef Helper_pch
+#define Helper_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* Helper_pch */

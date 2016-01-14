@@ -13,7 +13,7 @@
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary{
      if (self = [super init]){
          NSDictionary *dic = dictionary[@"user"];
-         self.userPicturePath = dic[@"picture"][@"thumbnail"];
+         self.imageData = dic[@"picture"][@"thumbnail"];
       }
     return self;
 }

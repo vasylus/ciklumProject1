@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
- 
+#import "User.h"
+
 @interface AppDelegate ()
 
 @end
@@ -16,7 +17,9 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    [MagicalRecord setupCoreDataStackWithAutoMigratingSqliteStoreNamed:@"CoreDataModel"];
+    
     return YES;
 }
 

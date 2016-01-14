@@ -19,14 +19,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Opx-aT-hRo">
-                                <rect key="frame" x="35" y="28" width="38" height="30"/>
+                                <rect key="frame" x="31" y="28" width="46" height="30"/>
                                 <state key="normal" title="add"/>
                                 <connections>
                                     <action selector="addButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ufv-Ll-ctD"/>
                                 </connections>
                             </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ifD-x8-qOX">
-                                <rect key="frame" x="16" y="66" width="288" height="502"/>
+                                <rect key="frame" x="12" y="102" width="296" height="466"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="rEQ-uL-S8X">
                                     <size key="itemSize" width="50" height="50"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -46,7 +46,7 @@
                                 </cells>
                             </collectionView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gnl-ZX-ECR">
-                                <rect key="frame" x="228" y="28" width="43" height="30"/>
+                                <rect key="frame" x="232" y="28" width="43" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="5Pd-39-XK3"/>
                                     <constraint firstAttribute="width" constant="43" id="XEY-IJ-qHT"/>
@@ -56,17 +56,30 @@
                                     <action selector="deleteButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TLS-xG-FKY"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cbk-xi-EA8">
+                                <rect key="frame" x="99" y="64" width="90" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="G3D-wU-v3L"/>
+                                </constraints>
+                                <state key="normal" title="save people"/>
+                                <connections>
+                                    <action selector="saveAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tYz-Mg-vXn"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="ifD-x8-qOX" firstAttribute="top" secondItem="Gnl-ZX-ECR" secondAttribute="bottom" constant="8" id="Fca-xI-ndF"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Gnl-ZX-ECR" secondAttribute="trailing" constant="33" id="HkE-wg-8GL"/>
+                            <constraint firstItem="ifD-x8-qOX" firstAttribute="top" secondItem="Gnl-ZX-ECR" secondAttribute="bottom" constant="44" id="Fca-xI-ndF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Gnl-ZX-ECR" secondAttribute="trailing" constant="29" id="HkE-wg-8GL"/>
                             <constraint firstItem="Opx-aT-hRo" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="IMV-CK-gXA"/>
-                            <constraint firstItem="Opx-aT-hRo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="19" id="JLl-e7-wfQ"/>
-                            <constraint firstItem="ifD-x8-qOX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="JRA-0J-1VA"/>
+                            <constraint firstItem="Opx-aT-hRo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="15" id="JLl-e7-wfQ"/>
+                            <constraint firstItem="ifD-x8-qOX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-4" id="JRA-0J-1VA"/>
                             <constraint firstItem="Gnl-ZX-ECR" firstAttribute="leading" secondItem="Opx-aT-hRo" secondAttribute="trailing" constant="155" id="LGe-kM-od1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cbk-xi-EA8" secondAttribute="trailing" constant="115" id="URC-G3-tOb"/>
+                            <constraint firstItem="cbk-xi-EA8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="83" id="cVY-d3-uAL"/>
+                            <constraint firstItem="cbk-xi-EA8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="44" id="dYY-dr-b3Q"/>
                             <constraint firstItem="Gnl-ZX-ECR" firstAttribute="leading" secondItem="Opx-aT-hRo" secondAttribute="trailing" constant="155" id="fu2-fd-j0x"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="ifD-x8-qOX" secondAttribute="trailing" id="gSQ-9d-1VX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ifD-x8-qOX" secondAttribute="trailing" constant="-4" id="gSQ-9d-1VX"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ifD-x8-qOX" secondAttribute="bottom" id="s1t-ft-5jC"/>
                             <constraint firstItem="Gnl-ZX-ECR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="wi7-y2-zap"/>
                         </constraints>

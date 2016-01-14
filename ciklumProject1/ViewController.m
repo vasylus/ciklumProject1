@@ -8,32 +8,39 @@
 
 #import "ViewController.h"
 #import "CustomTVDataSource.h"
+#import "CollectionViewManager.h"
 
 @interface ViewController ()
 
 @property (nonatomic, strong) CustomTVDataSource *dataSource;
+@property (nonatomic, strong) CollectionViewManager * collectionManager;
 
 @end
 
+
+
 @implementation ViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad{
     [super viewDidLoad];
     [self loadMyCollectionView];
  }
 
 - (void)loadMyCollectionView{
-    self.dataSource = [[CustomTVDataSource alloc] initWithCollectionView:self.collectionView];
+    self.collectionManager = [[CollectionViewManager alloc] initWithCollectionView:self.collectionView];
  }
 
 - (IBAction)addButton:(id)sender{
-    [self.dataSource addObjectToCollectionView:self.collectionView];
+    [self.collectionManager addObjectToCollectionView:self.collectionView];
  }
 
 - (IBAction)deleteButton:(id)sender{
-    [self.dataSource removeOBjectFromCollectionView:self.collectionView];
+    [self.collectionManager removeOBjectFromCollectionView:self.collectionView];
  }
 
+- (IBAction)saveAction:(id)sender {
+    [self.collectionManager saveToCoreData];
+ }
 
 @end
 

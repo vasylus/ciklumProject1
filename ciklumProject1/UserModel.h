@@ -10,7 +10,7 @@
 
 @interface UserModel : NSObject
 
-@property (nonatomic , strong) NSString *userPicturePath;
+@property (nonatomic , strong) NSString *imageData;
 
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary;
 
